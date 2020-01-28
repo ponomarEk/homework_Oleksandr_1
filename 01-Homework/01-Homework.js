@@ -17,7 +17,7 @@ console.log(sumOfPricesWithoutPennies);
 let sumCeil = Math.ceil(Math.floor(sumOfPrices)/100)*100;
 console.log(sumCeil);
 let boolEvenSum;
-(sumOfPricesWithoutPennies%2==0)?boolEvenSum=true:boolEvenSum=false;
+(Math.floor(sumOfPrices)%2==0)?boolEvenSum=true:boolEvenSum=false;
 console.log(boolEvenSum);
 const customerBill = 500;
 let change = 0;

@@ -31,9 +31,16 @@ let priceWithSale = sumOfPrices-sumOfPrices*(randomSale/100);
 console.log(+priceWithSale.toFixed(2));
 let lostProfit = (Math.floor(sumOfPrices)/2)-(Math.floor(sumOfPrices)*(randomSale/100));
 console.log(lostProfit);
-let homeworkTemplate = `Максимальна ціна: ${maximalPrice}<br>Мінімальна ціна: ${minimalPrice}<br>Вартість всіх товарів: ${sumOfPrices}
-<br> Вартість всіх товарів(тільки цілі їхні значення): ${sumOfPricesWithoutPennies}<br>Вартість всіх товарів округлена до сотень: ${sumCeil}
-<br>Чи парне число? - ${boolEvenSum}<br>Решта: ${change}<br>Середня ціна покупки: ${+avaragePrice.toFixed(2)}
-<br>Знижка: ${randomSale}%
-<br>Сума до оплати зі знижкою: ${+priceWithSale.toFixed(2)} <br>Упущена вигода: ${lostProfit}`;
+let homeworkTemplate = 
+     `Максимальна ціна: ${maximalPrice}<br>
+Мінімальна ціна: ${minimalPrice}<br>
+Вартість всіх товарів: ${sumOfPrices}<br>
+Вартість всіх товарів(тільки цілі їхні значення): ${sumOfPricesWithoutPennies}<br>
+Вартість всіх товарів округлена до сотень: ${sumCeil}<br>
+Чи парне число? - ${boolEvenSum}<br>
+Решта: ${change}<br>
+Середня ціна покупки: ${+avaragePrice.toFixed(2)}<br>
+Знижка: ${randomSale}%<br>
+Сума до оплати зі знижкою: ${+priceWithSale.toFixed(2)}<br>
+Упущена вигода: ${lostProfit}`;
 document.writeln(homeworkTemplate);

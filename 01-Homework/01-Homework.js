@@ -21,7 +21,7 @@ let boolEvenSum;
 console.log(boolEvenSum);
 const customerBill = 500;
 let change = 0;
-change = 500 - sumOfPrices;
+change = customerBill - sumOfPrices;
 console.log(change);
 let avaragePrice = 0;
 avaragePrice = sumOfPrices/3;

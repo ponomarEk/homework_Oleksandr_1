@@ -14,8 +14,8 @@ console.log(sumOfPrices);
 let sumOfPricesWithoutPennies = 0;
 sumOfPricesWithoutPennies+=Math.floor(priceOfJuice)+Math.floor(priceOfMilk)+Math.floor(priceOfChocolate);
 console.log(sumOfPricesWithoutPennies);
-let sumCeil = Math.round(Math.floor(sumOfPrices)/100)*100;
-console.log(sumCeil);
+let sumRound = Math.round(Math.floor(sumOfPrices)/100)*100;
+console.log(sumRound);
 let boolEvenSum;
 (Math.floor(sumOfPrices)%2==0)?boolEvenSum=true:boolEvenSum=false;
 console.log(boolEvenSum);
@@ -36,7 +36,7 @@ let homeworkTemplate =
 Мінімальна ціна: ${minimalPrice}<br>
 Вартість всіх товарів: ${sumOfPrices}<br>
 Вартість всіх товарів(тільки цілі їхні значення): ${sumOfPricesWithoutPennies}<br>
-Вартість всіх товарів округлена до сотень: ${sumCeil}<br>
+Вартість всіх товарів округлена до сотень: ${sumRound}<br>
 Чи парне число? - ${boolEvenSum}<br>
 Решта: ${change}<br>
 Середня ціна покупки: ${+avaragePrice.toFixed(2)}<br>

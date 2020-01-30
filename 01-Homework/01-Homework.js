@@ -14,7 +14,7 @@ console.log(sumOfPrices);
 let sumOfPricesWithoutPennies = 0;
 sumOfPricesWithoutPennies+=Math.floor(priceOfJuice)+Math.floor(priceOfMilk)+Math.floor(priceOfChocolate);
 console.log(sumOfPricesWithoutPennies);
-let sumCeil = Math.ceil(Math.floor(sumOfPrices)/100)*100;
+let sumCeil = Math.round(Math.floor(sumOfPrices)/100)*100;
 console.log(sumCeil);
 let boolEvenSum;
 (Math.floor(sumOfPrices)%2==0)?boolEvenSum=true:boolEvenSum=false;
